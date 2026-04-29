@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-brand-purpleDark text-white mt-auto overflow-hidden">
-      {/* Subtle glow blobs for depth */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-pink/20 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 left-1/3 w-96 h-96 rounded-full bg-brand-purpleLight/20 blur-3xl pointer-events-none" />
+    <footer className="relative bg-white text-slate-700 mt-auto overflow-hidden border-t border-brand-pink/15">
+      {/* Subtle pink glow blobs for depth */}
+      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-pink/12 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 left-1/3 w-96 h-96 rounded-full bg-brand-pinkLight/30 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-5 md:grid-cols-2 gap-10">
         <div className="lg:col-span-2">
@@ -20,7 +20,7 @@ export default function Footer() {
               priority
             />
           </Link>
-          <p className="text-slate-300 text-sm leading-relaxed mb-5 max-w-sm">
+          <p className="text-slate-600 text-sm leading-relaxed mb-5 max-w-sm">
             AI-Driven Software &amp; IT Services Company. End-to-End Technology
             Partner for businesses building scalable, intelligent digital
             products.
@@ -50,8 +50,8 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold mb-4 text-white">Company</h4>
-          <ul className="space-y-2 text-sm text-slate-300">
+          <h4 className="font-semibold mb-4 text-brand-purpleDark">Company</h4>
+          <ul className="space-y-2 text-sm text-slate-600">
             <FLink href="/about">About Us</FLink>
             <FLink href="/process">Our Process</FLink>
             <FLink href="/portfolio">Portfolio</FLink>
@@ -62,8 +62,8 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold mb-4 text-white">Services</h4>
-          <ul className="space-y-2 text-sm text-slate-300">
+          <h4 className="font-semibold mb-4 text-brand-purpleDark">Services</h4>
+          <ul className="space-y-2 text-sm text-slate-600">
             <FLink href="/services#software">Custom Software</FLink>
             <FLink href="/services#web">Web Development</FLink>
             <FLink href="/services#mobile">Mobile Apps</FLink>
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold mb-4 text-white">Get in Touch</h4>
+          <h4 className="font-semibold mb-4 text-brand-purpleDark">Get in Touch</h4>
           <ul className="space-y-3 text-sm text-slate-300">
             <ContactLine icon={
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
@@ -109,8 +109,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative border-t border-white/10 py-5 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-400">
+      <div className="relative border-t border-slate-200 py-5 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-500">
           <div>
             © {new Date().getFullYear()} Tech Jackstones. All rights reserved.
           </div>
@@ -157,7 +157,7 @@ function Social({
     <a
       href={href}
       aria-label={label}
-      className="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-pink hover:scale-110 flex items-center justify-center text-white transition-all duration-300 backdrop-blur"
+      className="w-10 h-10 rounded-full bg-brand-pink/10 text-brand-pink hover:bg-brand-pink hover:text-white hover:scale-110 flex items-center justify-center transition-all duration-300"
     >
       {children}
     </a>
@@ -173,7 +173,7 @@ function ContactLine({
 }) {
   return (
     <li className="flex items-center gap-3">
-      <span className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-brand-pinkLight shrink-0">
+      <span className="w-8 h-8 rounded-lg bg-brand-pink/10 flex items-center justify-center text-brand-pink shrink-0">
         {icon}
       </span>
       <span>{children}</span>

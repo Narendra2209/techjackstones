@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
-// Single-color LIGHT theme: Tech Blue family.
-// Professional, interactive, with 3D / animation utilities.
+// Single-color LIGHT theme: Axis-Bank-inspired Burgundy / Pink family.
+// White background, one professional highlight color (deep pink / burgundy).
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,12 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          // All shades of one Tech Blue family.
-          purple: "#1E3A8A",      // primary brand — deep blue
-          purpleDark: "#0B1729",  // navy near-black — footer
-          purpleLight: "#3B82F6", // mid blue — accents
-          pink: "#2563EB",        // CTA / highlight blue (vibrant)
-          pinkLight: "#60A5FA",   // light blue — soft surfaces
+          // All shades of one Burgundy/Pink family (Axis Bank reference).
+          purple: "#97144D",      // primary brand — Axis burgundy
+          purpleDark: "#5A0A2E",  // deepest wine — footer / headings
+          purpleLight: "#C2185B", // mid pink-burgundy — accents
+          pink: "#AE275F",        // CTA / highlight (vibrant burgundy-pink)
+          pinkLight: "#F8BBD0",   // light pink — soft surfaces
         },
       },
       fontFamily: {
@@ -53,8 +53,8 @@ const config: Config = {
           "50%": { transform: "translateY(-15px)" },
         },
         pulseGlow: {
-          "0%,100%": { boxShadow: "0 0 0 0 rgba(37,99,235,0.45)" },
-          "50%": { boxShadow: "0 0 0 14px rgba(37,99,235,0)" },
+          "0%,100%": { boxShadow: "0 0 0 0 rgba(151,20,77,0.45)" },
+          "50%": { boxShadow: "0 0 0 14px rgba(151,20,77,0)" },
         },
         gradientShift: {
           "0%,100%": { backgroundPosition: "0% 50%" },

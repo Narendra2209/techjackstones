@@ -25,17 +25,17 @@ export default function NewsletterForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className="flex-1 px-5 py-3 rounded-full text-slate-900 border-0 focus:outline-none focus:ring-2 focus:ring-white/50"
+          className="flex-1 px-5 py-3 rounded-full text-slate-900 bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-pink/40 focus:border-brand-pink"
         />
         <button
           type="submit"
-          className="px-6 py-3 rounded-full bg-white text-brand-purple font-semibold hover:bg-slate-100 transition"
+          className="btn-glow px-6 py-3 rounded-full gradient-bg text-white font-semibold transition"
         >
           Subscribe
         </button>
       </form>
       {done && (
-        <p className="mt-4 text-sm text-white/90">
+        <p className="mt-4 text-sm text-brand-pink font-semibold">
           ✓ Subscribed! Check your inbox.
         </p>
       )}

@@ -58,16 +58,18 @@ export default function Solutions() {
   return (
     <>
       {/* HERO */}
-      <section className="gradient-bg text-white py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_70%_30%,white_2px,transparent_2px)] bg-[length:40px_40px]" />
+      <section className="section-light py-20 md:py-28 relative overflow-hidden border-b border-brand-pink/10">
+        <div className="absolute inset-0 grid-pattern-light opacity-50" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/12 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/30 blur-3xl" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-5 border border-white/20">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-sm font-semibold mb-5 border border-brand-pink/20">
             Solutions
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Outcome-Driven Digital Solutions
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900">
+            Outcome-Driven <span className="gradient-text">Digital Solutions</span>
           </h1>
-          <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             We don&apos;t just deliver code — we deliver business outcomes
             through targeted, intelligent technology solutions.
           </p>
@@ -152,18 +154,20 @@ export default function Solutions() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 gradient-bg text-white">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to unlock your next leap?
+      <section className="py-20 section-light relative overflow-hidden border-t border-brand-pink/10">
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/15 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/40 blur-3xl" />
+        <div className="relative max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+            Ready to unlock <span className="gradient-text">your next leap?</span>
           </h2>
-          <p className="text-white/90 mb-8 text-lg">
+          <p className="text-slate-600 mb-8 text-lg">
             Tell us your business goal — we&apos;ll architect the technology
             roadmap to get you there.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 rounded-full bg-white text-brand-purple font-bold hover:bg-slate-100 hover:scale-105 transition shadow-xl"
+            className="btn-glow inline-block px-8 py-4 rounded-full gradient-bg text-white font-bold hover:scale-105 transition shadow-xl"
           >
             Get a Free Consultation
           </Link>

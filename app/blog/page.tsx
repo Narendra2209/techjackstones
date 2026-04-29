@@ -86,16 +86,18 @@ export default function Blog() {
   return (
     <>
       {/* HERO */}
-      <section className="gradient-bg text-white py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_70%_30%,white_2px,transparent_2px)] bg-[length:40px_40px]" />
+      <section className="section-light py-20 md:py-28 relative overflow-hidden border-b border-brand-pink/10">
+        <div className="absolute inset-0 grid-pattern-light opacity-50" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/12 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/30 blur-3xl" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-5 border border-white/20">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-sm font-semibold mb-5 border border-brand-pink/20">
             Blog
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Insights, Trends &amp; How-Tos
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900">
+            Insights, <span className="gradient-text">Trends &amp; How-Tos</span>
           </h1>
-          <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             Practical perspectives on AI, software development, and digital
             transformation — written by practitioners.
           </p>
@@ -207,12 +209,14 @@ export default function Blog() {
       </section>
 
       {/* NEWSLETTER */}
-      <section className="py-20 gradient-bg text-white">
-        <div className="max-w-3xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get insights delivered
+      <section className="py-20 section-light relative overflow-hidden border-t border-brand-pink/10">
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/15 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/40 blur-3xl" />
+        <div className="relative max-w-3xl mx-auto text-center px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+            Get insights <span className="gradient-text">delivered</span>
           </h2>
-          <p className="text-white/90 mb-8 text-lg">
+          <p className="text-slate-600 mb-8 text-lg">
             One thoughtful email per week on AI, engineering, and digital
             transformation. No spam — ever.
           </p>

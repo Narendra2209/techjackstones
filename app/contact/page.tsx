@@ -33,16 +33,18 @@ export default function Contact() {
   return (
     <>
       {/* HERO */}
-      <section className="gradient-bg text-white py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_70%_30%,white_2px,transparent_2px)] bg-[length:40px_40px]" />
+      <section className="section-light py-20 md:py-28 relative overflow-hidden border-b border-brand-pink/10">
+        <div className="absolute inset-0 grid-pattern-light opacity-50" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/12 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/30 blur-3xl" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-5 border border-white/20">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-sm font-semibold mb-5 border border-brand-pink/20">
             Contact
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Get in Touch
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900">
+            Get in <span className="gradient-text">Touch</span>
           </h1>
-          <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             Let&apos;s build something amazing together. Tell us about your
             project — we&apos;ll get back within one business day.
           </p>

@@ -56,16 +56,18 @@ export default function Testimonials() {
   return (
     <>
       {/* HERO */}
-      <section className="gradient-bg text-white py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_70%_30%,white_2px,transparent_2px)] bg-[length:40px_40px]" />
+      <section className="section-light py-20 md:py-28 relative overflow-hidden border-b border-brand-pink/10">
+        <div className="absolute inset-0 grid-pattern-light opacity-50" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/12 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/30 blur-3xl" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-5 border border-white/20">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-sm font-semibold mb-5 border border-brand-pink/20">
             Testimonials
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Trusted by Founders &amp; Engineering Leaders
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900">
+            Trusted by <span className="gradient-text">Founders &amp; Engineering Leaders</span>
           </h1>
-          <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             Real words from real clients we&apos;ve had the privilege to build
             with.
           </p>
@@ -133,17 +135,19 @@ export default function Testimonials() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 gradient-bg text-white">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Want to be our next success story?
+      <section className="py-20 section-light relative overflow-hidden border-t border-brand-pink/10">
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/15 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/40 blur-3xl" />
+        <div className="relative max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+            Want to be our <span className="gradient-text">next success story?</span>
           </h2>
-          <p className="text-white/90 mb-8 text-lg">
+          <p className="text-slate-600 mb-8 text-lg">
             Let&apos;s build something remarkable together.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 rounded-full bg-white text-brand-purple font-bold hover:bg-slate-100 hover:scale-105 transition shadow-xl"
+            className="btn-glow inline-block px-8 py-4 rounded-full gradient-bg text-white font-bold hover:scale-105 transition shadow-xl"
           >
             Start a Project
           </Link>

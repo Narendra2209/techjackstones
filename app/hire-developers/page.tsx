@@ -65,29 +65,31 @@ export default function HireDevelopers() {
   return (
     <>
       {/* HERO */}
-      <section className="gradient-bg text-white py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_70%_30%,white_2px,transparent_2px)] bg-[length:40px_40px]" />
+      <section className="section-light py-20 md:py-28 relative overflow-hidden border-b border-brand-pink/10">
+        <div className="absolute inset-0 grid-pattern-light opacity-50" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/12 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/30 blur-3xl" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-sm font-semibold mb-5 border border-white/20">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink text-sm font-semibold mb-5 border border-brand-pink/20">
             Hire Developers
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Hire Top-Tier Dedicated Developers
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900">
+            Hire Top-Tier <span className="gradient-text">Dedicated Developers</span>
           </h1>
-          <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             Scale your team with experienced engineers — fast. Flexible models,
             transparent pricing, no long lock-ins.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link
               href="/contact"
-              className="px-7 py-3.5 rounded-full bg-white text-brand-purple font-semibold hover:bg-slate-100 hover:shadow-2xl transition shadow-lg"
+              className="btn-glow px-7 py-3.5 rounded-full gradient-bg text-white font-semibold transition"
             >
               Hire Developers
             </Link>
             <Link
               href="#models"
-              className="px-7 py-3.5 rounded-full border-2 border-white/40 text-white font-semibold hover:bg-white/10 transition"
+              className="px-7 py-3.5 rounded-full border-2 border-brand-purple text-brand-purple font-semibold hover:bg-brand-purple hover:text-white transition"
             >
               View Models
             </Link>
@@ -216,18 +218,20 @@ export default function HireDevelopers() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 gradient-bg text-white">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to build your team?
+      <section className="py-20 section-light relative overflow-hidden border-t border-brand-pink/10">
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/15 blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/40 blur-3xl" />
+        <div className="relative max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+            Ready to build <span className="gradient-text">your team?</span>
           </h2>
-          <p className="text-white/90 mb-8 text-lg">
+          <p className="text-slate-600 mb-8 text-lg">
             Tell us your needs — we&apos;ll match you with the right developers
             within 48 hours.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 rounded-full bg-white text-brand-purple font-bold hover:bg-slate-100 hover:scale-105 transition shadow-xl"
+            className="btn-glow inline-block px-8 py-4 rounded-full gradient-bg text-white font-bold hover:scale-105 transition shadow-xl"
           >
             Hire Developers Now
           </Link>

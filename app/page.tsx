@@ -11,29 +11,29 @@ export default function Home() {
   return (
     <>
       {/* ===================== HERO ===================== */}
-      <section className="relative overflow-hidden mesh-gradient-animated text-white">
-        {/* Layered decorative effects */}
-        <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute -top-40 -right-32 w-[500px] h-[500px] rounded-full bg-brand-pink/30 blur-3xl animate-blob-1" />
-        <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-brand-purpleLight/30 blur-3xl animate-blob-2" />
-        <div className="absolute top-1/3 left-1/2 w-72 h-72 rounded-full bg-brand-pinkLight/20 blur-3xl animate-blob-1" />
+      <section className="relative overflow-hidden section-light text-slate-900">
+        {/* Soft pink decorative blobs (subtle on white) */}
+        <div className="absolute inset-0 grid-pattern-light opacity-50" />
+        <div className="absolute -top-40 -right-32 w-[500px] h-[500px] rounded-full bg-brand-pink/12 blur-3xl animate-blob-1" />
+        <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-brand-pinkLight/30 blur-3xl animate-blob-2" />
+        <div className="absolute top-1/3 left-1/2 w-72 h-72 rounded-full bg-brand-pinkLight/25 blur-3xl animate-blob-1" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 grid lg:grid-cols-12 gap-10 items-center">
           {/* Left — headline + CTAs */}
           <div className="lg:col-span-7 animate-slide-up">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-semibold mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-pink/10 text-brand-pink border border-brand-pink/20 text-sm font-semibold mb-6">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pinkLight opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-pinkLight"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-pink"></span>
               </span>
               AI-Driven Software &amp; IT Services
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] mb-6 tracking-tight text-slate-900">
               Transforming Ideas into{" "}
               <span className="block mt-0 relative">
                 <RotatingText
-                  className="text-white text-4xl md:text-6xl font-extrabold"
+                  className="gradient-text text-4xl md:text-6xl font-extrabold"
                   words={[
                     "Scalable Solutions",
                     "Intelligent Apps",
@@ -45,33 +45,33 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-white/85 mb-3 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-slate-600 mb-3 leading-relaxed max-w-xl">
               We&apos;re a global technology partner delivering end-to-end
               software, AI, and cloud services that empower businesses to
               innovate, scale, and succeed.
             </p>
-            <p className="text-sm font-semibold text-brand-pinkLight tracking-wider uppercase mb-8">
+            <p className="text-sm font-semibold text-brand-pink tracking-wider uppercase mb-8">
               Build Faster · Scale Smarter · Innovate Continuously
             </p>
 
             <div className="flex flex-wrap gap-4 mb-10">
               <Link
                 href="/contact"
-                className="btn-glow px-7 py-3.5 rounded-full bg-white text-brand-purple font-semibold inline-flex items-center gap-2"
+                className="btn-glow px-7 py-3.5 rounded-full gradient-bg text-white font-semibold inline-flex items-center gap-2"
               >
                 Start Your Project
                 <span aria-hidden>→</span>
               </Link>
               <Link
                 href="/services"
-                className="px-7 py-3.5 rounded-full border-2 border-white/40 text-white font-semibold hover:bg-white/10 hover:border-white/70 transition"
+                className="px-7 py-3.5 rounded-full border-2 border-brand-purple text-brand-purple font-semibold hover:bg-brand-purple hover:text-white transition"
               >
                 Explore Services
               </Link>
             </div>
 
             {/* Inline stats */}
-            <div className="grid grid-cols-3 gap-6 max-w-lg pt-6 border-t border-white/15">
+            <div className="grid grid-cols-3 gap-6 max-w-lg pt-6 border-t border-slate-200">
               <HeroStat n={200} suf="+" l="Projects" />
               <HeroStat n={50} suf="+" l="Clients" />
               <HeroStat n={98} suf="%" l="Retention" />
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="relative">
               {/* Conic ring backdrop */}
               <div
-                className="absolute -inset-4 rounded-[2.5rem] conic-ring opacity-30 blur-2xl animate-spin-slow"
+                className="absolute -inset-4 rounded-[2.5rem] conic-ring opacity-25 blur-2xl animate-spin-slow"
                 aria-hidden
               />
 
@@ -92,7 +92,7 @@ export default function Home() {
                 lift={8}
                 className="relative animate-float"
               >
-                <div className="relative aspect-[4/5] max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+                <div className="relative aspect-[4/5] max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl border border-brand-pink/15">
                   <Image
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80&auto=format&fit=crop"
                     alt="Engineering team collaborating"
@@ -100,11 +100,11 @@ export default function Home() {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-purpleDark/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-purpleDark/30 via-transparent to-transparent" />
 
                   {/* Floating glass tag — top right */}
-                  <div className="absolute top-4 right-4 glass-dark px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <div className="absolute top-4 right-4 glass-dark px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2 text-brand-purpleDark">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                     Now Hiring
                   </div>
                 </div>
@@ -116,10 +116,10 @@ export default function Home() {
                   ⚡
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-white">
+                  <div className="text-sm font-bold text-slate-900">
                     24/7 Support
                   </div>
-                  <div className="text-xs text-white/70">SLA-backed</div>
+                  <div className="text-xs text-slate-500">SLA-backed</div>
                 </div>
               </div>
 
@@ -129,8 +129,8 @@ export default function Home() {
                   🤖
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-white">AI-Driven</div>
-                  <div className="text-[11px] text-white/70">Always.</div>
+                  <div className="text-xs font-bold text-slate-900">AI-Driven</div>
+                  <div className="text-[11px] text-slate-500">Always.</div>
                 </div>
               </div>
             </div>
@@ -138,11 +138,11 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-white/60 text-xs">
+        <div className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-slate-500 text-xs">
           <span className="font-semibold tracking-widest uppercase">
             Scroll
           </span>
-          <span className="w-px h-10 bg-gradient-to-b from-white/60 to-transparent" />
+          <span className="w-px h-10 bg-gradient-to-b from-brand-pink/60 to-transparent" />
         </div>
       </section>
 
@@ -440,28 +440,28 @@ export default function Home() {
       </section>
 
       {/* ===================== FINAL CTA ===================== */}
-      <section className="py-24 mesh-gradient-animated text-white relative overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-30" />
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl animate-blob-1" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-white/10 blur-3xl animate-blob-2" />
+      <section className="py-24 section-light text-slate-900 relative overflow-hidden border-t border-brand-pink/10">
+        <div className="absolute inset-0 grid-pattern-light opacity-40" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-pink/15 blur-3xl animate-blob-1" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-pinkLight/40 blur-3xl animate-blob-2" />
         <ScrollFade className="relative max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl md:text-6xl font-bold mb-5 leading-tight">
-            Ready to build your next big solution?
+          <h2 className="text-4xl md:text-6xl font-bold mb-5 leading-tight text-slate-900">
+            Ready to build your <span className="gradient-text">next big solution?</span>
           </h2>
-          <p className="text-white/90 mb-10 text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-slate-600 mb-10 text-lg md:text-xl max-w-2xl mx-auto">
             Let&apos;s transform your vision into reality.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="btn-glow px-8 py-4 rounded-full bg-white text-brand-purple font-bold inline-flex items-center gap-2"
+              className="btn-glow px-8 py-4 rounded-full gradient-bg text-white font-bold inline-flex items-center gap-2"
             >
               Start a Project
               <span aria-hidden>→</span>
             </Link>
             <Link
               href="/hire-developers"
-              className="px-8 py-4 rounded-full border-2 border-white/40 text-white font-bold hover:bg-white/10 hover:border-white/70 transition"
+              className="px-8 py-4 rounded-full border-2 border-brand-purple text-brand-purple font-bold hover:bg-brand-purple hover:text-white transition"
             >
               Hire Developers
             </Link>
@@ -479,10 +479,10 @@ export default function Home() {
 function HeroStat({ n, suf, l }: { n: number; suf?: string; l: string }) {
   return (
     <div>
-      <div className="text-3xl md:text-4xl font-extrabold">
+      <div className="text-3xl md:text-4xl font-extrabold num-gradient">
         <CountUp end={n} suffix={suf} />
       </div>
-      <div className="text-xs uppercase tracking-wider text-white/70 font-semibold mt-1">
+      <div className="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1">
         {l}
       </div>
     </div>

@@ -5,16 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 /*
-  Single-color LIGHT theme — Tech Blue.
-  Professional, interactive, with 3D effects.
+  Single-color LIGHT theme — Axis-Bank-inspired Burgundy / Pink.
+  Clean white background, one professional highlight color.
 */
 
 :root {
-  --brand-deep: #0b1729;
-  --brand-dark: #1e3a8a;
-  --brand-mid: #2563eb;
-  --brand-light: #3b82f6;
-  --brand-soft: #60a5fa;
+  --brand-deep: #5a0a2e;   /* deepest wine — near-black burgundy */
+  --brand-dark: #791039;   /* dark burgundy */
+  --brand-mid: #97144d;    /* primary burgundy (Axis core) */
+  --brand-light: #c2185b;  /* mid pink-burgundy */
+  --brand-soft: #f8bbd0;   /* light pink */
 }
 
 html {
@@ -29,27 +29,27 @@ body {
 }
 
 /* ============================================================
-   GRADIENTS — all in the Tech Blue family
+   GRADIENTS — all in the Burgundy / Pink family
    ============================================================ */
 
 .gradient-text {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+  background: linear-gradient(135deg, #5a0a2e 0%, #97144d 60%, #c2185b 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+  background: linear-gradient(135deg, #5a0a2e 0%, #97144d 60%, #c2185b 100%);
 }
 
 .gradient-bg-animated {
   background: linear-gradient(135deg,
-      #1e3a8a 0%,
-      #2563eb 25%,
-      #3b82f6 50%,
-      #2563eb 75%,
-      #1e3a8a 100%);
+      #5a0a2e 0%,
+      #97144d 25%,
+      #c2185b 50%,
+      #97144d 75%,
+      #5a0a2e 100%);
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
 }
@@ -58,12 +58,12 @@ body {
   position: relative;
   background:
     linear-gradient(white, white) padding-box,
-    linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) border-box;
+    linear-gradient(135deg, #97144d 0%, #c2185b 100%) border-box;
   border: 2px solid transparent;
 }
 
 ::selection {
-  background: #2563eb;
+  background: #97144d;
   color: white;
 }
 
@@ -73,22 +73,22 @@ body {
 
 /* Mesh gradient — multi-layer radial gradients for a rich hero bg */
 .mesh-gradient {
-  background-color: #0b1729;
+  background-color: #5a0a2e;
   background-image:
-    radial-gradient(at 12% 18%, #1e3a8a 0, transparent 50%),
-    radial-gradient(at 88% 22%, #3b82f6 0, transparent 50%),
-    radial-gradient(at 70% 85%, #2563eb 0, transparent 50%),
-    radial-gradient(at 18% 78%, #1e40af 0, transparent 50%);
+    radial-gradient(at 12% 18%, #791039 0, transparent 50%),
+    radial-gradient(at 88% 22%, #c2185b 0, transparent 50%),
+    radial-gradient(at 70% 85%, #97144d 0, transparent 50%),
+    radial-gradient(at 18% 78%, #6b0e37 0, transparent 50%);
 }
 
 /* Animated mesh — slowly drifts the gradient stops */
 .mesh-gradient-animated {
-  background-color: #0b1729;
+  background-color: #5a0a2e;
   background-image:
-    radial-gradient(at 12% 18%, #1e3a8a 0, transparent 50%),
-    radial-gradient(at 88% 22%, #3b82f6 0, transparent 50%),
-    radial-gradient(at 70% 85%, #2563eb 0, transparent 50%),
-    radial-gradient(at 18% 78%, #1e40af 0, transparent 50%);
+    radial-gradient(at 12% 18%, #791039 0, transparent 50%),
+    radial-gradient(at 88% 22%, #c2185b 0, transparent 50%),
+    radial-gradient(at 70% 85%, #97144d 0, transparent 50%),
+    radial-gradient(at 18% 78%, #6b0e37 0, transparent 50%);
   background-size: 200% 200%;
   animation: meshDrift 18s ease-in-out infinite;
 }
@@ -130,26 +130,44 @@ body {
 }
 
 .glass-dark {
-  background: rgba(11, 23, 41, 0.55);
+  /* Repurposed: light frosted glass for white backgrounds (Axis-style). */
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(151, 20, 77, 0.12);
+  color: #5a0a2e;
+  box-shadow: 0 4px 12px -4px rgba(151, 20, 77, 0.12);
+}
+
+/* Section variants (white background with subtle pink accents) */
+.section-light {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(248, 187, 208, 0.35), transparent 55%),
+    radial-gradient(circle at 8% 92%, rgba(248, 187, 208, 0.28), transparent 55%),
+    #ffffff;
+}
+
+.section-cta {
+  background:
+    linear-gradient(135deg, rgba(151, 20, 77, 0.04) 0%, rgba(248, 187, 208, 0.18) 100%),
+    #ffffff;
+  border: 1px solid rgba(151, 20, 77, 0.12);
 }
 
 /* Conic gradient ring (orbiting accent) */
 .conic-ring {
   background: conic-gradient(from 180deg at 50% 50%,
-      #1e3a8a 0deg,
-      #3b82f6 90deg,
-      #60a5fa 180deg,
-      #2563eb 270deg,
-      #1e3a8a 360deg);
+      #5a0a2e 0deg,
+      #c2185b 90deg,
+      #f8bbd0 180deg,
+      #97144d 270deg,
+      #5a0a2e 360deg);
 }
 
 /* Soft inner spotlight for stat tiles */
 .tile-spotlight {
   background:
-    radial-gradient(circle at 30% 0%, rgba(96, 165, 250, 0.18), transparent 60%),
+    radial-gradient(circle at 30% 0%, rgba(248, 187, 208, 0.35), transparent 60%),
     #ffffff;
 }
 
@@ -169,9 +187,9 @@ body {
   border-radius: inherit;
   padding: 1.5px;
   background: linear-gradient(135deg,
-      rgba(37, 99, 235, 0) 0%,
-      rgba(37, 99, 235, 0.5) 50%,
-      rgba(96, 165, 250, 0) 100%);
+      rgba(151, 20, 77, 0) 0%,
+      rgba(151, 20, 77, 0.5) 50%,
+      rgba(248, 187, 208, 0) 100%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -189,13 +207,13 @@ body {
 .bento-card:hover {
   transform: translateY(-4px);
   box-shadow:
-    0 20px 40px -16px rgba(37, 99, 235, 0.25),
+    0 20px 40px -16px rgba(151, 20, 77, 0.25),
     0 8px 16px -8px rgba(15, 23, 42, 0.08);
 }
 
 /* Number gradient (large stats) */
 .num-gradient {
-  background: linear-gradient(180deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+  background: linear-gradient(180deg, #5a0a2e 0%, #97144d 60%, #c2185b 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -224,7 +242,7 @@ body {
 .tilt-on-hover:hover {
   transform: perspective(1000px) rotateX(4deg) rotateY(-6deg) translateY(-6px);
   box-shadow:
-    0 20px 40px -12px rgba(37, 99, 235, 0.25),
+    0 20px 40px -12px rgba(151, 20, 77, 0.25),
     0 8px 16px -8px rgba(15, 23, 42, 0.1);
 }
 
@@ -233,7 +251,7 @@ body {
   box-shadow:
     0 1px 2px rgba(15, 23, 42, 0.06),
     0 4px 8px rgba(15, 23, 42, 0.04),
-    0 16px 32px -8px rgba(37, 99, 235, 0.08);
+    0 16px 32px -8px rgba(151, 20, 77, 0.08);
   transition:
     transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.35s ease;
@@ -244,7 +262,7 @@ body {
   box-shadow:
     0 2px 4px rgba(15, 23, 42, 0.08),
     0 10px 24px rgba(15, 23, 42, 0.08),
-    0 30px 60px -16px rgba(37, 99, 235, 0.25);
+    0 30px 60px -16px rgba(151, 20, 77, 0.25);
 }
 
 /* Glow ring (used on CTA / featured icons) */
@@ -257,7 +275,7 @@ body {
   position: absolute;
   inset: -4px;
   border-radius: inherit;
-  background: linear-gradient(135deg, #2563eb, #60a5fa, #2563eb);
+  background: linear-gradient(135deg, #97144d, #f8bbd0, #97144d);
   background-size: 200% 200%;
   z-index: -1;
   opacity: 0;
@@ -273,9 +291,9 @@ body {
 /* Shimmer text/accent */
 .shimmer-text {
   background: linear-gradient(90deg,
-      #1e3a8a 0%,
-      #60a5fa 50%,
-      #1e3a8a 100%);
+      #5a0a2e 0%,
+      #c2185b 50%,
+      #5a0a2e 100%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -294,12 +312,12 @@ body {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
-  box-shadow: 0 8px 20px -6px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 8px 20px -6px rgba(151, 20, 77, 0.45);
 }
 
 .btn-glow:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 12px 30px -6px rgba(37, 99, 235, 0.55);
+  box-shadow: 0 12px 30px -6px rgba(151, 20, 77, 0.55);
 }
 
 .btn-glow:active {
@@ -379,11 +397,11 @@ body {
 
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45);
+    box-shadow: 0 0 0 0 rgba(151, 20, 77, 0.45);
   }
 
   50% {
-    box-shadow: 0 0 0 14px rgba(37, 99, 235, 0);
+    box-shadow: 0 0 0 14px rgba(151, 20, 77, 0);
   }
 }
 
